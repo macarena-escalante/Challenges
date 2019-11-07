@@ -1,0 +1,2 @@
+INSERT INTO cuentahack_macarenaescalante (cuenta_id, billetera_id, saldo_correcto)
+VALUES (25,	25,	7209.12)

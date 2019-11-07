@@ -1,0 +1,3 @@
+SELECT COUNT(m.de_cuenta_id) AS movimientos, de_cuenta_id, a_cuenta_id from movimiento AS m
+WHERE de_cuenta_id=a_cuenta_id AND tipo_operacion="EGRESO"
+GROUP BY de_cuenta_id

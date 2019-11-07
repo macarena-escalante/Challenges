@@ -1,0 +1,34 @@
+Challenge: Damage Control en la Billetera Virtual A las 22am del día de ayer nos comenzaron a reportar SERIOS 
+incidentes en la billetera virtual, todos los incidentes generados reportan lo mismo:
+“No  puedo ver el SALDO!! ME ROBARON!!!TENIA MAS PLATA Y AHORA ME APARECE EN -666!!!!111 OMG”. 
+El primer equipo de respuesta ha reportado que los activos (dinero real) están en su lugar y ha corregido 
+la vulnerabilidad en la aplicación API que permitió al atacante resetear el saldo. 
+También asegura que no ha habido robo efectivo de dinero, pero el usuario no lo sabe y esto genera histeria colectiva 
+en las redes sociales y la reputación de la empresa puede verse comprometida si no se restablecen los saldos. 
+Mientras se decidió calmar a los usuarios mediante un comunicado asegurándoles que no ha habido pérdida de dinero 
+y que se restablecerá dentro de 1 hora el servicio. 
+Hemos llamado al ADA Damage Control Team para solucionar el problema en la base de datos.
+Tu responsabilidad será:
+
+1)Armar una consulta mostrando Username, nombre, billetera_id, cuenta_id y saldo actual de TODAS las billeteras 
+[se espera que este reporte devuelva el saldo erróneo].
+
+2)Basado en la info de la tabla “cuenta” y la tabla “movimiento”, armar una consulta en base a una billetera 
+en particular para determinar cuál es el saldo real. Se sabe que la tabla “movimiento” NO fue afectada por el hackeo, 
+por lo cual es posible saber el saldo original. Para este caso, elegir la billetera que corresponda a tu edad, 
+ej si tenes 25 años, elegir la billetera 25. En este caso, la consulta deberá devolver un registro con: 
+billetera_id, cuenta_id, saldo_real
+
+3)Crear una tabla “cuentahack_tuNombre” con el comando CREATE y con las siguientes columnas: cuenta_id(pk), 
+billetera_id, saldo_correcto.
+
+4)Usando una sentencia INSERT, hacer un insert sobre la tabla creada en el punto anterior y poner los valores 
+obtenidos del punto 2.
+
+5)Escribir como sería una consulta UPDATE a la tabla billetera para restablecer los saldos sobre la billetera elegida.
+
+6)Se detectó un movimiento extraño  en la billetera 47 (un EGRESO a la misma cuentade origen): 
+usando un comando select identificar si ocurrio lo mismo en otras billeteras.
+
+
+Genera una base de datos llamada billeteravirtualhack. Trabajen sobre ESA! Good hunting!

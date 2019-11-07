@@ -1,0 +1,3 @@
+UPDATE cuenta
+SET saldo_disponible= 7209.12
+WHERE saldo_disponible=-666 AND billetera_id=25

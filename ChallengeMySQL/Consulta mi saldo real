@@ -1,0 +1,4 @@
+SELECT c.billetera_id, c.cuenta_id, SUM(m.importe) AS saldo_real FROM cuenta AS c
+LEFT JOIN movimiento AS m
+ON c.cuenta_id=m.cuenta_id
+WHERE billetera_id=25

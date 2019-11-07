@@ -1,0 +1,8 @@
+SELECT u.username, p.nombre, b.billetera_id, c.cuenta_id, c.saldo_disponible 
+FROM usuario AS u
+INNER JOIN persona AS p
+ON u.persona_id=p.persona_id 
+INNER JOIN billetera AS b
+ON p.persona_id=b.persona_id 
+INNER JOIN cuenta AS c
+ON b.billetera_id=c.billetera_id

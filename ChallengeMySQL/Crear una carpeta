@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS `cuentahack_MacarenaEscalante`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cuentahack_MacarenaEscalante` (
+  `cuenta_id` int(11) NOT NULL AUTO_INCREMENT,
+  `billetera_id` int(10) unsigned NOT NULL,
+`saldo_correcto` int(10) unsigned NOT NULL,
+ PRIMARY KEY (`cuenta_id`)) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
