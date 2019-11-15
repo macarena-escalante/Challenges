@@ -21,6 +21,7 @@ public class Empleado {
     public String estado;
     public Date fechaAlta;
     public Date fechaBaja;
+    public int dni;
 
     @ManyToOne
     @JoinColumn(name = "categoria_id", referencedColumnName = "categoria_id")
@@ -89,6 +90,14 @@ public class Empleado {
 
     public void setFechaBaja(Date fechaBaja) {
         this.fechaBaja = fechaBaja;
+    }
+
+    public int getDni() {
+        return dni;
+    }
+
+    public void setDni(int dni) {
+        this.dni = dni;
     }
 
     

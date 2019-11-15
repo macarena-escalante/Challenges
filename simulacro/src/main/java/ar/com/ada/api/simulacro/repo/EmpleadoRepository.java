@@ -14,6 +14,8 @@ import ar.com.ada.api.simulacro.entities.Empleado;
 public interface EmpleadoRepository extends JpaRepository<Empleado, Integer>{
     
     Empleado findById (int id);
+    Empleado findByNombre (String nombre);
+    Empleado findByDni (int id);
 
     
 }
